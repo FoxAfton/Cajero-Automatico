@@ -6,7 +6,6 @@ import vista.CajeroView;
 
 import javax.swing.SwingUtilities;
 
-/** Punto de entrada: arma Modelo, Vista y Controlador. */
 public class Main {
 
     public static void main(String[] args) {
