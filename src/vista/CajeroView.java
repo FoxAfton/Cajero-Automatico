@@ -11,7 +11,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
-/** Vista (MVC): pantalla del cajero. Izquierda: montos. Derecha: estado de cuenta / recibo. */
 public class CajeroView extends JFrame {
 
     private JList<Double> listaMontos;
@@ -145,7 +144,6 @@ public class CajeroView extends JFrame {
         actualizando = false;
     }
 
-    // ----- utilidades de formato -----
     private String linea(String etiqueta, String valor) {
         return String.format("  %-20s %14s%n", etiqueta + ":", valor);
     }
