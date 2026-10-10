@@ -1,0 +1,30 @@
+# Clases compiladas
+out/
+bin/
+build/
+target/
+*.class
+
+# Empaquetados
+*.jar
+*.war
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+nbbuild/
+nbdist/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
+hs_err_pid*
