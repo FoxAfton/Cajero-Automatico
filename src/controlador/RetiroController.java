@@ -5,7 +5,6 @@ import modelo.Recibo;
 import modelo.Retiro;
 import vista.CajeroView;
 
-/** Controlador (MVC): coordina la vista del cajero con el modelo. */
 public class RetiroController {
 
     private Cajero cajero;
