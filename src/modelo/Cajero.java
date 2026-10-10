@@ -9,7 +9,6 @@ public class Cajero {
     public static final double MONTO_MINIMO = 200.00;
     public static final double MONTO_MAXIMO = 5000.00;
     public static final double INCREMENTO = 200.00;
-    /** Comisión por retiro: 1.5 % del monto elegido. */
     public static final double TASA_COMISION = 0.015;
 
     private Cuenta cuenta;
@@ -22,7 +21,7 @@ public class Cajero {
         return cuenta;
     }
 
-    /** Montos disponibles: múltiplos de 200.00. */
+    /** Montos disponibles*/
     public List<Double> getMontosDisponibles() {
         List<Double> montos = new ArrayList<>();
         for (double m = MONTO_MINIMO; m <= MONTO_MAXIMO; m += INCREMENTO) {
@@ -35,7 +34,7 @@ public class Cajero {
         return Math.round(monto * TASA_COMISION * 100.0) / 100.0;
     }
 
-    /** Genera el estado de cuenta para el monto elegido (aún no modifica el saldo). */
+    /** Genera el estado de cuenta para el monto elegido. */
     public Retiro simularRetiro(double monto) {
         double comision = calcularComision(monto);
         return new Retiro(cuenta.getTitular().getNombre(), cuenta.getSaldo(), monto, comision);
